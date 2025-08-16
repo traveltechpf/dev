@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Travel Platform Frontend with Rollup",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "start:build": "node scripts/start.js --build",
+    "build": "node scripts/build.js",
+    "dev": "npm run start",
+    "deploy": "npm run build",
+    "clean": "rimraf ../Backend/travel-platform/target/classes/static/*",
+    "check": "node -e \"console.log('Frontend:', process.cwd()); console.log('Backend:', require('path').resolve('../Backend/travel-platform')); console.log('Target:', require('path').resolve('../Backend/travel-platform/target/classes/static'));\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.0"
+  }
+}
