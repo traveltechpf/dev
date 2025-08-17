@@ -5,11 +5,15 @@ import java.math.BigDecimal;
 import com.travelplatform.travel_platform.config.TripStatus;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "trips")
 public class Trip {
 
 	@Id
